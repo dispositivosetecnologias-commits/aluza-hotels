@@ -1,1 +1,17 @@
-
+* {
+    margin:0px;
+    padding:0px;
+    box-sizing:border-box;
+}
+body {
+    background-color: var(--cream);
+}
+:root {
+    --title-font: 'Cormorant Garamond', serif;
+    --text-font: 'Inter', sans-serif;
+    --petrol-blue: #234A4A;
+    --cream: #F5F0E7;
+    --champagne: #B99B72;
+    --charcoal: #282624;
+    --white: #FFFFFF;
+}
