@@ -86,6 +86,7 @@ h1, .div-h1 {
     padding:1rem;
     display:flex;
     border-top: solid 2px var(--divider);
+    align-items:center;
 }
 .essence-text {
     padding:2rem;
@@ -142,4 +143,46 @@ h1, .div-h1 {
 }
 .essence-button a:hover {
     color:var(--champagne);
+}
+/* SECTION 2 */
+.global-container {
+    display:flex;
+    width:100%;
+    background-color:var(--champagne);
+    padding:3rem;
+    justify-content:center;
+    align-items:center;
+    gap:2.5rem;
+}
+.card {
+    padding:1rem;
+    display:flex;
+    flex-direction:column;
+    justify-content:center;
+    text-align:center;
+    align-items:center;
+}
+.card1 {
+    border-right:1px solid var(--cream);
+}
+.card .icon {
+    font-size:4rem;
+    color:var(--cream);
+}
+.card div{
+    font-size:4rem;
+    color:var(--charcoal);
+}
+.card p {
+    color:var(--charcoal);
+    text-transform:uppercase;
+    letter-spacing:0.2rem;
+}
+.card p::after {
+    content:'';
+    display:block;
+    width:70%;
+    background-color:var(--divider);
+    height:2px;
+    margin:10% auto 0;
 }
