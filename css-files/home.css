@@ -89,7 +89,7 @@ h1, .div-h1, h2{
     align-items:center;
 }
 .essence-text {
-    padding:2rem;
+    padding-left:2rem;
     width:50%;
     border-left:2px solid var(--divider);
 }
@@ -197,7 +197,7 @@ h1, .div-h1, h2{
 .hotels-heading {
     width:50%;
     border-left:2px solid var(--divider);
-    padding:1rem;
+    padding-left:1rem;
     display:flex;
     flex-direction:column;
     gap:1rem;
@@ -277,4 +277,43 @@ h1, .div-h1, h2{
 }
 .hotels-grid a p:nth-child(3) {
     font-weight:normal;
+}
+/* SECTION 4 */ 
+.banner-container {
+    width:100%;
+    padding:2rem;
+    background:
+    linear-gradient(to right, rgba(0, 0, 0, 0.8) 0%, transparent 40%),
+    linear-gradient(to left, rgba(0, 0, 0, 0.8) 0%, transparent 40%),
+    url(../images-files/home-images/img9.png) center / cover;
+    display:flex;
+    color:var(--cream);
+    text-shadow:1px 1px 2px black;
+    align-items:center;
+    justify-content:space-between;
+}
+.banner-text {
+    width:50%;
+    border-left:1px solid var(--divider);
+    padding-left:1rem;
+    display:flex;
+    flex-direction:column;
+    gap:0.75rem;
+}
+.banner-text p:first-child {
+    font-size:0.75rem;
+    text-transform:uppercase;
+    letter-spacing:0.2rem;
+}
+.banner-text h2 {
+    font-size:2rem;
+}
+.banner-topics {
+    font-size:0.75rem;
+    text-transform:uppercase;
+    display:flex;
+    flex-direction:column;
+    gap:0.75rem;
+    border-left:1px solid var(--divider);
+    padding-left:1rem;
 }
