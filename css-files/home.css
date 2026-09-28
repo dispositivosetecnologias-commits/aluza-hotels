@@ -106,7 +106,6 @@ h1, .div-h1, h2{
 .essence-text a {
     color:var(--charcoal);
     text-decoration:none;
-    font-weight:bold;
 }
 .essence-image {
     width:45%;
