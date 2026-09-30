@@ -14,5 +14,8 @@ body {
     --champagne: #B99B72;
     --charcoal: #282624;
     --white: #FFFFFF;
-    --divider: #DED5CA
+    --divider: #DED5CA;
+    --a: 0.75rem;
+    --title: 2rem;
+    --letter-spacing: 0.2rem;
 }
