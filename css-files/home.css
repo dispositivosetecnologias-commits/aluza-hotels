@@ -442,7 +442,7 @@ h1, h2{
     color:var(--cream);
 }
 /* MEDIA QUERY */ 
-@media (min-width:769px) and (max-width:1024px) {
+@media (max-width:1024px) {
     .essence-text h2, .hotels-heading h2, .banner-text h2 {
         font-size:1.7rem;
     }
@@ -522,7 +522,92 @@ h1, h2{
    }
 }
 @media (min-width:481px) and (max-width:768px) {
+    .essence-text h2, .hotels-heading h2, .banner-text h2{
+        font-size:1.4rem;
+    }
+    .hero .hero-content {
+        width:70%;
+    }
+    .header {
+    background:
+    linear-gradient(to right, var(--cream) 60%, transparent),
+    url(../images-files/home-images/img1.png) center;
+    height:auto;
+    }
+    .hero-content h1 {
+        font-size:1.7rem;
+    }
+    .hero-content p {
+        font-size:0.8rem;
+    }
+    .essence-container {
+        flex-direction:column;
+    }
+    .essence-container .essence-text {
+        width:100%;
+    }
+    .essence-text p:first-child, .hotels-heading p:first-child, .banner-text p:first-child, .request-text p:first-child {
+        font-size:0.7rem;
+    }
+    .essence-text p, .banner-request p {
+        font-size:0.8rem;
+    }
+    .essence-image {
+        width:90%;
+        aspect-ratio:2/1;
+}
+    .essence-image img {
+        width:100%;
+        height:100%;
+        object-fit:cover;
+    }
+    .essence-subtext {
+        width:100%;
+    }
+    .global-container {
+        padding:2rem;
+    }
+    .card .icon, .card div{
+        font-size:2rem;
+    }
+    .hotels-grid {
+        width:100%;
+        display:grid;
+        grid-template-columns:repeat(2, 1fr);
+        gap:0.5rem;
+    }
+    .banner-text {
+        gap:0.7rem;
+    }
+    .banner-text p, .request-text p{
+        font-size:0.8rem;
+    }
+    .banner-topics p {
+        font-size:0.65rem;
+    }
 
+    .footer-top{
+        flex-direction:column;
+        padding:1rem;
+    }
+    .vertical-row {
+        display:none;
+    }
+    .footer-nav, .footer-service, .footer-center {
+        border-top:1px solid var(--champagne);
+        padding:1rem 0px 1rem 0px;
+    }
+    .footer-logo {
+        flex-direction:row;
+        width:100%;
+        gap:1rem;
+    }
+    .footer-logo img {
+        width:50%;
+    }
+    .footer-container p, .footer-container a {
+        font-size:0.8rem;
+    }
 }
 @media (max-width:480px) {
 
