@@ -27,6 +27,7 @@ h1, h2{
 .header .header1 {
     display:flex;
     width:100%;
+    position:relative;
 }
 .header .logo {
     width:35%;
@@ -498,7 +499,7 @@ h1, h2{
         gap:1px;
     }
     .banner-text {
-        gap:1px;
+        row-gap:1px;
     }
     .banner-topics p {
         font-size:0.7rem;
@@ -521,8 +522,8 @@ h1, h2{
     aspect-ratio:1/1;
    }
 }
-@media (min-width:481px) and (max-width:768px) {
-    .essence-text h2, .hotels-heading h2, .banner-text h2{
+@media (max-width:768px) {
+    .essence-text h2, .hotels-heading h2, .banner-text h2, .request-text h2{
         font-size:1.4rem;
     }
     .hero .hero-content {
@@ -533,6 +534,9 @@ h1, h2{
     linear-gradient(to right, var(--cream) 60%, transparent),
     url(../images-files/home-images/img1.png) center;
     height:auto;
+    }
+    .menu .request-button a {
+        font-size:0.6rem;
     }
     .hero-content h1 {
         font-size:1.7rem;
@@ -598,17 +602,76 @@ h1, h2{
         padding:1rem 0px 1rem 0px;
     }
     .footer-logo {
+        margin:auto;
         flex-direction:row;
-        width:100%;
+        width:80%;
         gap:1rem;
     }
     .footer-logo img {
-        width:50%;
+        width:40%;
     }
     .footer-container p, .footer-container a {
         font-size:0.8rem;
     }
 }
-@media (max-width:480px) {
-
+@media (max-width:460px) {
+    .header1 .logo {
+        width:50%;
+    }
+    .menu .request-button {
+        display:flex;
+        position:absolute;
+        left:65%;
+        bottom:130%;
+        padding:0px; 
+    }
+    .menu .request-button{
+        display:none;
+    }
+    .request-button2 a, .menu nav ul li a, .essence-subtext p {
+        font-size:0.6rem;
+    }
+    .hero .hero-content {
+        width:95%;
+        display:flex;
+        flex-direction:column;
+        row-gap:1rem;
+    }
+     .hero-content h1 {
+        font-size:1.5rem;
+    }
+    .hero-content p, .essence-text p, .essence-text a, .banner-text p, .request-text p{
+        font-size:0.7rem;
+    }
+     .global-container {
+        padding:2rem;
+    }
+    .card .icon, .card div{
+        font-size:1rem;
+    }
+    .hotels-grid {
+        width:100%;
+        display:grid;
+        grid-template-columns:repeat(1, 1fr);
+        row-gap:0.5rem;
+    }
+    .banner-container {
+        flex-direction:column;
+        row-gap:2rem;
+    }
+    .banner-container .banner-text, .banner-container .banner-topics {
+        width:100%;
+    }
+    .footer-logo {
+        width:50%;
+    }
+    .footer-logo img {
+        width:100%;
+    }
+    .footer-top .footer-logo p {
+        display:none;
+    }
+    .footer-container p, .footer-container a {
+        font-size:0.7rem;
+    }
 }
