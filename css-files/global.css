@@ -15,7 +15,22 @@ body {
     --charcoal: #282624;
     --white: #FFFFFF;
     --divider: #DED5CA;
-    --a: 0.75rem;
-    --title: 2rem;
-    --letter-spacing: 0.2rem;
+    --title: 3rem;
+    --subtitle: 2rem;
+    --small-text: 0.75rem;
+}
+h1 {
+    font-size:var(--title);
+}
+h2 {
+    font-size:var(--subtitle);
+}
+h3, p, a {
+    font-size:var(--small-text);
+}
+h1, h2 {
+    font-family:var(--title-font);
+}
+p,a {
+    font-family:var(--text-font);
 }

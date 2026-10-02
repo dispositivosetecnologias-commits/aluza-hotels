@@ -1,10 +1,3 @@
-
-p,a {
-    font-family:var(--text-font);
-}
-h1, h2{
-    font-family:var(--title-font);
-}
 /*  HEADER */
 .header {
     background:
@@ -42,7 +35,6 @@ h1, h2{
 }
 .menu a {
     color:var( --charcoal);
-    font-size:0.75rem;
     text-decoration:none;
 }
 .menu .request-button {
@@ -64,7 +56,6 @@ h1, h2{
 }
 .hero-content h1 {
     color:var(--charcoal);
-    font-size:3rem;
 }
 .hero-content p{
     color:var( --champagne);
@@ -92,12 +83,10 @@ h1, h2{
     color:var(--champagne);
 }
 .essence-text p:first-child {
-    font-size:0.75rem;
     text-transform:uppercase;
     letter-spacing:0.2rem;
 }
 .essence-text h2 {
-    font-size:2rem;
     font-weight:normal;
     color:var(--charcoal);
 }
@@ -122,7 +111,6 @@ h1, h2{
     color:var(--champagne);
 }
 .essence-subtext1 {
-    font-size:0.75rem;
     text-transform:uppercase;
     line-height:1.5rem;
     font-weight:bold;
@@ -196,11 +184,9 @@ h1, h2{
 .hotels-heading p {
     text-transform:uppercase;
     letter-spacing:0.2rem;
-    font-size:0.75rem;
     color:var(--charcoal);
 }
 .hotels-heading h2{
-    font-size:2rem;
     font-weight:normal;
     color:var(--charcoal);
 }
@@ -292,12 +278,10 @@ h1, h2{
     gap:0.75rem;
 }
 .banner-text p:first-child, .request-text p:first-child{
-    font-size:0.75rem;
     text-transform:uppercase;
     letter-spacing:0.2rem;
 }
 .banner-text h2, .request-text h2 {
-    font-size:2rem;
     font-weight:normal;
 }
 .banner-topics {
@@ -307,9 +291,6 @@ h1, h2{
     gap:0.75rem;
     border-left:1px solid var(--divider);
     padding-left:1rem;
-}
-.banner-topics p {
-    font-size:0.75rem;
 }
 /* SECTION 5 */ 
 .request-container {
@@ -374,7 +355,6 @@ h1, h2{
 .footer-top h3 {
     color:var(--champagne);
     text-transform:uppercase;
-    font-size:0.75rem;
     letter-spacing:0.2rem;
     font-weight:normal;
 }
@@ -430,14 +410,9 @@ h1, h2{
 }
 /* MEDIA QUERY */ 
 @media (max-width:1024px) {
-    .essence-text h2, .hotels-heading h2, .banner-text h2 {
-        font-size:1.7rem;
-    }
-    .hero-content h1 {
-        font-size:2rem;
-    }
-    p, .essence-text a {
-        font-size:0.9rem;
+    :root {
+        --title: 2rem;
+        --subtitle:1.7rem;
     }
     .essence-container .essence-text {
         width:60%;
@@ -445,9 +420,6 @@ h1, h2{
     .essence-image {
         width:50%;
         aspect-ratio:3/4;
-    }
-    .essence-subtext p, .card p, .hotels-grid h3, .hotels-grid p, .banner-topics p, .footer-bottom a {
-        font-size: 0.7rem;
     }
     .card .icon, .card div{
         font-size:3rem;
@@ -474,9 +446,6 @@ h1, h2{
     .footer-container {
         padding:1rem;
     }
-    .footer-container p, .footer-container a {
-        font-size:0.9rem;
-    }
     .footer-container .vertical-row {
         height:200px;
     }
@@ -487,8 +456,9 @@ h1, h2{
    }
 }
 @media (max-width:768px) {
-    .essence-text h2, .hotels-heading h2, .banner-text h2, .request-text h2{
-        font-size:1.4rem;
+    :root {
+        --title: 1.7rem;
+        --subtitle:1.4rem;
     }
     .header {
         background:
@@ -502,20 +472,11 @@ h1, h2{
     .hero .hero-content {
         width:70%;
     }
-    .hero-content h1 {
-        font-size:1.7rem;
-    }
-    .hero-content p, .essence-text p, .banner-request p, .banner-text p, .request-text p, .footer-container p, .footer-container a {
-        font-size:0.8rem;
-    }
     .essence-container {
         flex-direction:column;
     }
     .essence-container .essence-text {
         width:100%;
-    }
-    .essence-text p:first-child, .hotels-heading p:first-child, .banner-text p:first-child, .request-text p:first-child {
-        font-size:0.7rem;
     }
     .essence-image {
         width:90%;
@@ -561,28 +522,27 @@ h1, h2{
     .footer-logo img {
         width:40%;
     }
+    .footer-container p, .footer-container a {
+        font-size:0.8rem;
+    }
 }
 @media (max-width:460px) {
+    :root {
+        --title: 1.5rem;
+        --subtitle:1.4rem;
+        --small-text: 0.7rem;
+    }
     .header1 .logo {
         width:50%;
     }
     .menu .request-button{
         display:none;
     }
-    .request-button2 a, .menu nav ul li a, .essence-subtext p {
-        font-size:0.6rem;
-    }
     .hero .hero-content {
         width:95%;
         display:flex;
         flex-direction:column;
         row-gap:1rem;
-    }
-    .hero-content h1 {
-        font-size:1.5rem;
-    }
-    .hero-content p, .essence-text p, .essence-text a, .banner-text p, .request-text p, .footer-container p, .footer-container a {
-        font-size:0.7rem;
     }
     .card .icon, .card div{
         font-size:1rem;
