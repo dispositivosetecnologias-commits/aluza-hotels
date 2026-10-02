@@ -1,16 +1,4 @@
-:root {
-    --title-font: 'Cormorant Garamond', serif;
-    --text-font: 'Inter', sans-serif;
-    --petrol-blue: #234A4A;
-    --cream: #F5F0E7;
-    --champagne: #B99B72;
-    --charcoal: #282624;
-    --white: #FFFFFF;
-    --divider: #DED5CA;
-    --a: 0.75rem;
-    --title: 2rem;
-    --letter-spacing: 0.2rem;
-}
+
 p,a {
     font-family:var(--text-font);
 }
@@ -20,14 +8,12 @@ h1, h2{
 /*  HEADER */
 .header {
     background:
-    linear-gradient(to right, var(--cream) 35%, transparent 70%),
+    linear-gradient(to right, var(--cream) 35%, transparent 65%),
     url(../images-files/home-images/img1.png) center;
-    height:auto;
 }
 .header .header1 {
     display:flex;
     width:100%;
-    position:relative;
 }
 .header .logo {
     width:35%;
@@ -45,18 +31,18 @@ h1, h2{
     justify-content:start;
     background-color:var(--cream);
 }
-.menu nav, .request-button{
-    padding:1rem;
-}
 .menu nav ul {
     list-style:none;
     display:flex;
     justify-content:space-between;
     gap:5vw;
 }
-.menu nav a, .request-button a {
+.menu nav, .request-button{
+    padding:1rem;
+}
+.menu a {
     color:var( --charcoal);
-    font-size:var(--a);
+    font-size:0.75rem;
     text-decoration:none;
 }
 .menu .request-button {
@@ -70,7 +56,7 @@ h1, h2{
     text-transform:uppercase;
 }
 .hero .hero-content {
-    width:35%;
+    width:40%;
     padding:2.5rem;
     display:flex;
     flex-direction:column;
@@ -96,22 +82,22 @@ h1, h2{
     align-items:center;
 }
 .essence-text {
+    display:flex;
+    flex-direction:column;
+    row-gap:1.25rem;
     padding-left:2rem;
     width:30%;
 }
-.essence-text p, h2 {
-    margin-bottom:1.25rem;
-}
-.essence-text p:first-child, .essence-text p:nth-child(3){
+.essence-text p {
     color:var(--champagne);
 }
 .essence-text p:first-child {
-    font-size:var(--a);
+    font-size:0.75rem;
     text-transform:uppercase;
-    letter-spacing:var(--letter-spacing);
+    letter-spacing:0.2rem;
 }
 .essence-text h2 {
-    font-size:var(--title);
+    font-size:2rem;
     font-weight:normal;
     color:var(--charcoal);
 }
@@ -136,7 +122,7 @@ h1, h2{
     color:var(--champagne);
 }
 .essence-subtext1 {
-    font-size:var(--a);
+    font-size:0.75rem;
     text-transform:uppercase;
     line-height:1.5rem;
     font-weight:bold;
@@ -181,7 +167,7 @@ h1, h2{
 .card p {
     color:var(--charcoal);
     text-transform:uppercase;
-    letter-spacing:var(--letter-spacing);
+    letter-spacing:0.2rem;
 }
 .card p::after {
     content:'';
@@ -189,7 +175,7 @@ h1, h2{
     width:70%;
     background-color:var(--divider);
     height:2px;
-    margin:10% auto 0;
+    margin:10% auto;
 }
 /*SECTION 3*/
 .hotels-container {
@@ -209,12 +195,12 @@ h1, h2{
 }
 .hotels-heading p {
     text-transform:uppercase;
-    letter-spacing:var(--letter-spacing);
-    font-size:var(--a);
+    letter-spacing:0.2rem;
+    font-size:0.75rem;
     color:var(--charcoal);
 }
 .hotels-heading h2{
-    font-size:var(--title);
+    font-size:2rem;
     font-weight:normal;
     color:var(--charcoal);
 }
@@ -306,12 +292,12 @@ h1, h2{
     gap:0.75rem;
 }
 .banner-text p:first-child, .request-text p:first-child{
-    font-size:var(--a);
+    font-size:0.75rem;
     text-transform:uppercase;
-    letter-spacing:var(--letter-spacing);
+    letter-spacing:0.2rem;
 }
 .banner-text h2, .request-text h2 {
-    font-size:var(--title);
+    font-size:2rem;
     font-weight:normal;
 }
 .banner-topics {
@@ -323,7 +309,7 @@ h1, h2{
     padding-left:1rem;
 }
 .banner-topics p {
-    font-size:var(--a);
+    font-size:0.75rem;
 }
 /* SECTION 5 */ 
 .request-container {
@@ -388,7 +374,7 @@ h1, h2{
 .footer-top h3 {
     color:var(--champagne);
     text-transform:uppercase;
-    font-size:var(--a);
+    font-size:0.75rem;
     letter-spacing:0.2rem;
     font-weight:normal;
 }
@@ -408,12 +394,12 @@ h1, h2{
     flex-direction:column;
     gap:0.5rem;
 }
-.footer-top a:hover {
-    color:var(--champagne);
-}
 .footer-top a {
     color:var(--cream);
     text-decoration:none;
+}
+.footer-top a:hover {
+    color:var(--champagne);
 }
 .center-address, .center-cellphone, .center-email{
     display:flex;
@@ -453,56 +439,37 @@ h1, h2{
     p, .essence-text a {
         font-size:0.9rem;
     }
-    .hero-content .request-button2 {
-        width:120%;
-    } 
     .essence-container .essence-text {
         width:60%;
     }
     .essence-image {
-    width:50%;
-    aspect-ratio:3/4;
+        width:50%;
+        aspect-ratio:3/4;
     }
-    .essence-image img {
-    width:100%;
-    height:100%;
-    object-fit:cover;
-    }
-    .essence-subtext p {
+    .essence-subtext p, .card p, .hotels-grid h3, .hotels-grid p, .banner-topics p, .footer-bottom a {
         font-size: 0.7rem;
     }
     .card .icon, .card div{
         font-size:3rem;
     }
-    .card p {
-        font-size:0.7rem;
-    }
     .card p::after {
-    height:1px;
+        height:1px;
     }
     .hotels-container .hotels-heading {
         width:100%;
     }
     .hotels-grid {
-    width:100%;
-    display:grid;
-    grid-template-columns:repeat(3, 1fr);
-    gap:0.5rem;
+        grid-template-columns:repeat(3, 1fr);
+        gap:0.5rem;
     }
     .hotels-grid a {
         aspect-ratio:2/1;
-    }
-    .hotels-grid h3, .hotels-grid p {
-        font-size:0.7rem;
     }
     .hotels-grid a .hotel {
         gap:1px;
     }
     .banner-text {
         row-gap:1px;
-    }
-    .banner-topics p {
-        font-size:0.7rem;
     }
     .footer-container {
         padding:1rem;
@@ -512,9 +479,6 @@ h1, h2{
     }
     .footer-container .vertical-row {
         height:200px;
-    }
-    .footer-bottom a {
-        font-size:0.7rem;
     }
 }
 @media (min-width:850px) and (max-width:1024px) {
@@ -526,22 +490,22 @@ h1, h2{
     .essence-text h2, .hotels-heading h2, .banner-text h2, .request-text h2{
         font-size:1.4rem;
     }
-    .hero .hero-content {
-        width:70%;
-    }
     .header {
-    background:
-    linear-gradient(to right, var(--cream) 60%, transparent),
-    url(../images-files/home-images/img1.png) center;
-    height:auto;
+        background:
+        linear-gradient(to right, var(--cream) 60%, transparent),
+        url(../images-files/home-images/img1.png) center;
+        height:auto;
     }
     .menu .request-button a {
         font-size:0.6rem;
     }
+    .hero .hero-content {
+        width:70%;
+    }
     .hero-content h1 {
         font-size:1.7rem;
     }
-    .hero-content p {
+    .hero-content p, .essence-text p, .banner-request p, .banner-text p, .request-text p, .footer-container p, .footer-container a {
         font-size:0.8rem;
     }
     .essence-container {
@@ -553,17 +517,9 @@ h1, h2{
     .essence-text p:first-child, .hotels-heading p:first-child, .banner-text p:first-child, .request-text p:first-child {
         font-size:0.7rem;
     }
-    .essence-text p, .banner-request p {
-        font-size:0.8rem;
-    }
     .essence-image {
         width:90%;
         aspect-ratio:2/1;
-}
-    .essence-image img {
-        width:100%;
-        height:100%;
-        object-fit:cover;
     }
     .essence-subtext {
         width:100%;
@@ -575,16 +531,11 @@ h1, h2{
         font-size:2rem;
     }
     .hotels-grid {
-        width:100%;
-        display:grid;
         grid-template-columns:repeat(2, 1fr);
         gap:0.5rem;
     }
     .banner-text {
         gap:0.7rem;
-    }
-    .banner-text p, .request-text p{
-        font-size:0.8rem;
     }
     .banner-topics p {
         font-size:0.65rem;
@@ -610,20 +561,10 @@ h1, h2{
     .footer-logo img {
         width:40%;
     }
-    .footer-container p, .footer-container a {
-        font-size:0.8rem;
-    }
 }
 @media (max-width:460px) {
     .header1 .logo {
         width:50%;
-    }
-    .menu .request-button {
-        display:flex;
-        position:absolute;
-        left:65%;
-        bottom:130%;
-        padding:0px; 
     }
     .menu .request-button{
         display:none;
@@ -637,21 +578,16 @@ h1, h2{
         flex-direction:column;
         row-gap:1rem;
     }
-     .hero-content h1 {
+    .hero-content h1 {
         font-size:1.5rem;
     }
-    .hero-content p, .essence-text p, .essence-text a, .banner-text p, .request-text p{
+    .hero-content p, .essence-text p, .essence-text a, .banner-text p, .request-text p, .footer-container p, .footer-container a {
         font-size:0.7rem;
-    }
-     .global-container {
-        padding:2rem;
     }
     .card .icon, .card div{
         font-size:1rem;
     }
     .hotels-grid {
-        width:100%;
-        display:grid;
         grid-template-columns:repeat(1, 1fr);
         row-gap:0.5rem;
     }
@@ -659,7 +595,7 @@ h1, h2{
         flex-direction:column;
         row-gap:2rem;
     }
-    .banner-container .banner-text, .banner-container .banner-topics {
+    .banner-text, .banner-topics {
         width:100%;
     }
     .footer-logo {
@@ -670,8 +606,5 @@ h1, h2{
     }
     .footer-top .footer-logo p {
         display:none;
-    }
-    .footer-container p, .footer-container a {
-        font-size:0.7rem;
     }
 }
