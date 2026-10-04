@@ -17,7 +17,7 @@ body {
     --divider: #DED5CA;
     --title: 3rem;
     --subtitle: 2rem;
-    --small-text: 0.75rem;
+    --small-text: 0.8rem;
 }
 h1 {
     font-size:var(--title);
@@ -33,4 +33,10 @@ h1, h2 {
 }
 p,a {
     font-family:var(--text-font);
+}
+h1, h2, h3, p, a {
+    color:var(--charcoal);
+}
+a {
+    text-decoration:none;
 }
