@@ -530,7 +530,6 @@
     :root {
         --title: 1.5rem;
         --subtitle:1.4rem;
-        --small-text: 0.7rem;
     }
     .header1 .logo {
         width:50%;
