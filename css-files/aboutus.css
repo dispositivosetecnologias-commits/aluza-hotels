@@ -155,6 +155,7 @@
     flex-direction:column;
     padding:2.5rem;
     gap:2rem;
+    border-bottom:1px solid var(--divider);
 }
 .topics-container {
     display:flex;
@@ -182,4 +183,24 @@
     width:1px;
     display:block;
     background-color:var(--divider);
+}
+/* SECTION 4 */ 
+.cta-container {
+    display:flex;
+    flex-direction:column;
+    padding:2.5rem;
+    gap:2rem;
+    text-align:center;
+}
+.request-button a {
+    border:1px solid var(--charcoal);
+    padding:0.5rem;
+    border-radius:5px;
+    text-transform:uppercase;
+    font-size:0.7rem;
+    letter-spacing:0.05rem;
+}
+.request-button a:hover {
+    color:var(--champagne);
+    border-color:var(--champagne);
 }
