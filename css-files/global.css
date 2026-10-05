@@ -17,7 +17,7 @@ body {
     --divider: #DED5CA;
     --title: 3rem;
     --subtitle: 2rem;
-    --small-text: 0.8rem;
+    --small-text: 1rem;
 }
 h1 {
     font-size:var(--title);

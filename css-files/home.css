@@ -1,3 +1,9 @@
+/* SUBTITLE CONFIG */
+.section-label {
+    color:var(--champagne);
+    text-transform:uppercase;
+    letter-spacing:0.2rem;
+}
 /*  HEADER */
 .header .header1 {
     display:flex;
@@ -71,11 +77,6 @@
 }
 .essence-subtext p {
     color:var(--champagne);
-}
-.essence-text p:first-child {
-    color:var(--champagne);
-    text-transform:uppercase;
-    letter-spacing:0.2rem;
 }
 .essence-image {
     width:45%;
@@ -231,9 +232,9 @@
 .hotels-grid .hotel p, .hotels-grid .hotel h3{
     color:var(--cream);
 }
-.hotels-grid a h3, .hotels-grid a p:nth-child(2) {
+.hotels-grid a p:nth-child(2) {
     text-transform:uppercase;
-    letter-spacing:var(--letter-spacing);
+    letter-spacing:0.2rem;;
 }
 .hotels-grid a p:nth-child(3) {
     font-weight:normal;
@@ -277,6 +278,9 @@
     border-left:1px solid var(--divider);
     padding-left:1rem;
 }
+.banner-topics p {
+    font-size:0.8rem;
+}
 /* SECTION 5 */ 
 .request-container {
     width:100%;
@@ -292,9 +296,6 @@
     text-align:center;
     width:50%;
     gap:0.75rem;
-}
-.request-text p:first-child {
-    color:var(--champagne);
 }
 .request-button2 a {
     border:1px solid var(--charcoal);
@@ -441,9 +442,7 @@
     :root {
         --title: 1.7rem;
         --subtitle:1.4rem;
-    }
-    .menu .request-button a {
-        font-size:0.6rem;
+        --small-text:0.85rem;
     }
     .hero {
         background:
@@ -508,7 +507,7 @@
         font-size:0.8rem;
     }
 }
-@media (max-width:460px) {
+@media (max-width:500px) {
     :root {
         --title: 1.5rem;
         --subtitle:1.4rem;
