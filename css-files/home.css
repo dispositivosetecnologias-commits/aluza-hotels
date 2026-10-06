@@ -42,6 +42,8 @@
     border:1px solid var(--charcoal);
     border-radius:5px;
     text-transform:uppercase;
+    font-size:0.7rem;
+    letter-spacing:0.05rem;
 }
 .menu a:hover {
     color:var(--champagne);
