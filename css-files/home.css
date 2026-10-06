@@ -427,7 +427,7 @@
         row-gap:1px;
     }
     .footer-container {
-        padding:1rem;
+        padding:0.5rem;
     }
     .footer-container .vertical-row {
         height:200px;
@@ -482,7 +482,6 @@
     .banner-topics p {
         font-size:0.65rem;
     }
-
     .footer-top{
         flex-direction:column;
         padding:1rem;
