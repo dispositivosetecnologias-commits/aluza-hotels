@@ -56,7 +56,7 @@
     url(../images-files/home-images/img1.png) center;
 }
 .hero .hero-content {
-    width:40%;
+    width:50%;
     padding:2.5rem;
     display:flex;
     flex-direction:column;

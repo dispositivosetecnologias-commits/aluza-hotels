@@ -48,3 +48,26 @@
     color:var(--champagne);
     border-color:var(--champagne);
 }
+/* SECTION 1 */
+.banner-container {
+    width:100%;
+    background:url(../images-files/faq-images/img1.png) center/cover;
+    padding:2.5rem;
+}
+.banner-container .banner-text {
+    display:flex;
+    flex-direction:column;
+    gap:1.25rem;
+    width:50%;
+}
+.banner-container p:first-child {
+    color:var(--charcoal);
+}
+.banner-container h1::after {
+    content:"";
+    display:block;
+    width:10%;
+    height:1px;
+    margin-top:1.25rem;
+    background-color:var(--charcoal);
+}
