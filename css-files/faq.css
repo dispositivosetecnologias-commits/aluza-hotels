@@ -107,13 +107,11 @@
     font-family:var(--text-font);
     
 }
-.container-template details:hover {
-    cursor:pointer;
-}
 .container-template summary {
     list-style:none;
     display:flex;
     justify-content:space-between;
+    cursor:pointer;
 }
 .container-template summary::after {
     content:"〉";
