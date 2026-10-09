@@ -61,6 +61,7 @@
     flex-direction:column;
     gap:1.25rem;
     width:50%;
+    text-shadow:1px 1px 2px #000000;
 }
 .banner-text h1, .banner-text p {
     color:var(--cream);
@@ -99,9 +100,6 @@
     font-weight:normal;
 }
 .container-template details {
-    display:flex;
-    flex-direction:column;
-    gap:1rem;
     border-bottom:1px solid var(--divider);
     padding:1rem;
     color:var(--charcoal);
@@ -120,6 +118,7 @@
 .container-template summary::after {
     content:"〉";
     font-size:var(--small-text);
+    flex-shrink:0;
 }
 .container-template details[open] summary::after {
     transform:rotate(90deg);
@@ -148,7 +147,7 @@
 }
 .cta-container .request-button a {
     color:var(--cream);
-    border-color:1px solid var(--cream);
+    border-color:var(--cream);
     text-shadow:1px 1px 2px #000000;
 }
 .cta-container .request-button a:hover {
@@ -236,4 +235,116 @@
 }
 .terms-privacy a:hover {
     color:var(--cream);
+}
+/* MEDIAS QUERIES */
+@media (max-width:1000px) {
+    :root {
+        --title: 2rem;
+        --subtitle:1.7rem;
+    }
+    .footer-container {
+        padding:0.5rem;
+    }
+    .footer-container .vertical-row {
+        height:200px;
+    }
+}
+@media (max-width:768px) {
+    :root {
+        --title: 1.7rem;
+        --subtitle:1.4rem;
+        --small-text:0.85rem;
+    }
+    .banner-container {
+        background:
+        linear-gradient(to right, rgba(0, 0, 0, 0.8), transparent 50%),
+        linear-gradient(to left, rgba(0, 0, 0, 0.8), transparent 50%),
+        url(../images-files/faq-images/img1.png) center/cover;
+    }
+    .banner-container .banner-text {
+        width:100%;
+    }
+    .container-template {
+        flex-direction:column;
+        gap:2rem;
+        padding:1.2rem;
+    }
+    .container-template .text, .container-template .questions {
+        width:100%;
+    }
+    .container-template .text {
+        border-right:none;
+        border-bottom:1px solid var(--divider);
+        padding-bottom:1.5rem;
+        padding-right:0px;
+    }
+    .cta-container {
+        flex-direction:column;
+        background:
+        linear-gradient(to left, var(--cream), transparent 50%),
+        url(../images-files/faq-images/img2.png) center/cover;
+        text-align:center;
+    }
+    .cta-container .text, .cta-container .request-button {
+        width:100%;
+    }
+    .cta-container .request-button a {
+        color:var(--charcoal);
+        border-color:var(--charcoal);
+        text-shadow:none;
+    }
+    .cta-container .request-button a:hover {
+        color:var(--cream);
+        border-color:var(--cream);
+    }
+    .footer-top{
+        flex-direction:column;
+        padding:1rem;
+    }
+    .vertical-row {
+        display:none;
+    }
+    .footer-nav, .footer-service, .footer-center {
+        border-top:1px solid var(--champagne);
+        padding:1rem 0px 1rem 0px;
+    }
+    .footer-logo {
+        margin:auto;
+        flex-direction:row;
+        width:80%;
+        gap:1rem;
+    }
+    .footer-logo img {
+        width:40%;
+    }
+    .footer-container p, .footer-container a {
+        font-size:0.8rem;
+    }
+}
+@media (max-width:500px) {
+    :root {
+        --title: 1.5rem;
+        --subtitle:1.4rem;
+    }
+    .header1 .logo {
+        width:50%;
+    }
+    .menu .request-button{
+        display:none;
+    }
+    .banner-container {
+        text-align:center;
+    }
+    .banner-container h1::after {
+        margin:1.25rem auto;
+    }
+    .footer-logo {
+        width:50%;
+    }
+    .footer-logo img {
+        width:100%;
+    }
+    .footer-top .footer-logo p {
+        display:none;
+    }
 }
