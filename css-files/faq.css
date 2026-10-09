@@ -127,3 +127,27 @@
 .container-template details p {
     color:var(--champagne);
 }
+/* CTA SECTION */ 
+.cta-container {
+    display:flex;
+    background:
+    linear-gradient(to left, rgba(0, 0, 0, 0.8), transparent 50%),
+    url(../images-files/faq-images/img2.png) center/cover;
+    padding:2.5rem;
+    justify-content:space-between;
+    align-items:center;
+}
+.cta-container .text {
+    display:flex;
+    flex-direction:column;
+    gap:1rem;
+    width:40%;
+}
+.cta-container .text .section-label {
+    color:var(--charcoal);
+}
+.cta-container .request-button a {
+    color:var(--cream);
+    border-color:1px solid var(--cream);
+    text-shadow:1px 1px 2px #000000;
+}
