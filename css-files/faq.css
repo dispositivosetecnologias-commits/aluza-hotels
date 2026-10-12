@@ -66,14 +66,6 @@
 .banner-text h1, .banner-text p {
     color:var(--cream);
 }
-.banner-container h1::after {
-    content:"";
-    display:block;
-    width:10%;
-    height:1px;
-    margin-top:1.25rem;
-    background-color:var(--cream);
-}
 /* QUESTIONS SECTIONS */
 .container-template {
     display:flex;
@@ -112,6 +104,9 @@
     display:flex;
     justify-content:space-between;
     cursor:pointer;
+}
+.container-template summary::-webkit-details-marker { 
+    display:none; 
 }
 .container-template summary::after {
     content:"〉";
@@ -322,7 +317,6 @@
 @media (max-width:500px) {
     :root {
         --title: 1.5rem;
-        --subtitle:1.4rem;
     }
     .header1 .logo {
         width:50%;
@@ -335,6 +329,9 @@
     }
     .banner-container h1::after {
         margin:1.25rem auto;
+    }
+    .container-template {
+        padding:1rem;
     }
     .footer-logo {
         width:50%;

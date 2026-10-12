@@ -31,7 +31,7 @@ h3, p, a {
 h1, h2 {
     font-family:var(--title-font);
 }
-p,a {
+p, a, h3 {
     font-family:var(--text-font);
 }
 h1, h2, h3, p, a {
