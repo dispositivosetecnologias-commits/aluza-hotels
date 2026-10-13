@@ -58,11 +58,17 @@
                     </div>
                     <div class="form-content">
                         <form action="" method="post">
-                            <label for="name">Nome completo *</label>
-                            <input type="text" name="name" id="name" required placeholder="Seu nome completo">
-                            <label for="email">E-mail*</label>
-                            <input type="email" name="email" id="email" required placeholder="seuemail@exemplo.com">
-                            <label for="subject">Assunto *</label>
+                            <div class="form-top">
+                                <div class="top-name">
+                                    <label for="name">Nome completo <span class="asterisk">*</span></label>
+                                    <input type="text" name="name" id="name" required placeholder="Seu nome completo">
+                                </div>
+                                <div class="top-email">
+                                    <label for="email">E-mail <span class="asterisk">*</span></label>
+                                    <input type="email" name="email" id="email" required placeholder="seuemail@exemplo.com">
+                                </div>
+                            </div>
+                            <label for="subject">Assunto <span class="asterisk">*</span></label>
                             <select name="subject" id="subject" required>
                                 <option value="" selected disabled>Selecione um assunto</option>
                                 <option value="reservation">Dúvidas sobre reservas</option>
@@ -73,13 +79,14 @@
                                 <option value="events">Eventos e parcerias</option>
                                 <option value="other">Outros assuntos</option>
                             </select>
-                            <label for="message">Mensagem *</label>
+                            <label for="message">Mensagem <span class="asterisk">*</span></label>
                             <textarea name="message" id="message" required maxlength="500" placeholder="Escreva sua mensagem aqui..."></textarea>
                             <input type="submit" value="Enviar mensagem →">
                         </form>
                     </div>
                 </div>
             </section>
+            <div class="div-line"></div>
             <section class="service-channels">
                 <div class="service-container">
                     <div class="text">
