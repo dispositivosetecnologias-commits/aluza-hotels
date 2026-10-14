@@ -1,1 +1,33 @@
-
+/* HERO SECTION */
+.hero-container {
+    display:flex;
+    flex-direction:column;
+    gap:1rem;
+    padding:2.5rem;
+    background:
+    linear-gradient(to right, rgba(0, 0, 0, 0.5), transparent 50%),
+    url(../images-files/paris-images/img1.png) center/cover;
+}
+.hero-text {
+    display:flex;
+    flex-direction:column;
+    gap:0.5rem;
+    width:50%;
+    text-shadow:1px 1px 2px #000000;
+}
+.hero-text h1, .hero-text p, .hero-container .request-button a{
+    color:var(--cream);
+}
+.hero-text p:nth-child(3) {
+    font-weight:bold;
+}
+.hero-container .request-button {
+    padding:0;
+}
+.hero-container .request-button a {
+    border-color:var(--cream);
+}
+.hero-container .request-button a:hover {
+    border-color:var(--champagne);
+    color:var(--champagne);
+}
