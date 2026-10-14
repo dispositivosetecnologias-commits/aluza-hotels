@@ -216,6 +216,9 @@ a {
     .footer-container p, .footer-container a {
         font-size:0.8rem;
     }
+    .logo-text {
+        text-align:center;
+    }
 }
 @media (max-width:500px) {
     :root {

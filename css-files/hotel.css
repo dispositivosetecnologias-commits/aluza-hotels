@@ -31,3 +31,22 @@
     border-color:var(--champagne);
     color:var(--champagne);
 }
+/* HOTEL-MENU SECTION */
+.hotel-menu-container {
+    padding:0px 2.5rem 2.5rem 2.5rem;
+    position:sticky;
+    align-self:start;
+    top:0px;
+}
+.hotel-menu-container ul {
+    list-style:none;
+    display:flex;
+    justify-content:space-between;
+    box-shadow:0px 0px 5px #989898;
+    padding:0.7rem;
+    margin:auto;
+    background:var(--cream);
+}
+.hotel-menu-container ul  li a:hover {
+    color:var(--champagne);
+}
