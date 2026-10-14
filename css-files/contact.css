@@ -30,9 +30,8 @@
 /* MAIN-CONTAINER */
 .main-container {
     display:flex;
-    justify-content:space-between;
-    padding:2.5rem;
     border-bottom:2px solid var(--divider);
+    gap:2.5rem;
 }
 .main-container .div-line {
     height:inherit;
@@ -44,6 +43,7 @@
     display:flex;
     flex-direction:column;
     gap:1rem;
+    padding:2.5rem;
 }
 .form-container form, .top-name, .top-email {
     display:flex;
@@ -69,6 +69,7 @@
     font-family:var(--text-font);
     font-size:0.7rem;
     color:var(--charcoal);
+    font-weight:bold;
 }
 .form-container .asterisk {
     color:#FF0000;
@@ -84,7 +85,8 @@
     resize:vertical;
 }
 .form-container input[type="submit"] {
-    width:50%;
+    width:40%;
+    align-self:center;
     background-color:var(--charcoal);
     color:var(--cream);
     border-radius:5px;
@@ -94,6 +96,9 @@
     color:var(--charcoal);
 }
 /* SERVICE-CHANNELS SECTION */
+.service-container {
+    padding:2.5rem;
+}
 .service-container, .service-container .channels {
     display:flex;
     flex-direction:column;
@@ -110,6 +115,10 @@
 .service-container .container .content p:first-child {
     text-transform:uppercase;
     font-size:0.7rem;
+    font-weight:bold;
+}
+.service-container .channels a:hover {
+    color:var(--champagne);
 }
 /* OTHER CHANNELS SECTION */
 .other-container {
@@ -132,4 +141,63 @@
 }
 .other-button2 p {
     font-size:1.5rem;
+}
+/* MEDIA QUERY */
+@media (max-width:1220px) {
+    .main-container .form {
+        border-bottom:2px solid var(--divider);
+    }
+    .form-container .form-top {
+        flex-direction:column;
+    } 
+    .form-container input[type="submit"] {
+        width:100%;
+    }
+}
+@media (max-width:850px) {
+    .main-container {
+        flex-direction:column;
+    }
+    .form-container input[type="submit"] {
+        width:50%;
+    }
+}
+@media (max-width:768px) {
+    .service-container .channels {
+        display:flex;
+    }
+    .other-channels .other-container {
+        flex-direction:column;
+    }
+    .other-container .div-line {
+        height:1px;
+        width:100%;
+    }
+    .other-container .div-line1 {
+        display:none;
+    }
+    .other-button a {
+        justify-content:space-between;
+    }
+}
+@media (max-width:500px) {
+    .hero-container {
+        flex-direction:column;
+        height:auto;
+    }
+    .hero-container .text {
+        width:100%;
+        padding:1rem;
+        text-align:center;
+    }
+    .hero-container .image-container {
+        height:auto;
+        width:100%;
+    }
+    .form-container, .service-container, .other-container {
+        padding:1rem;
+    }
+    .service-container .container {
+        gap:0.5rem;
+    }
 }

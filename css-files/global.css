@@ -183,6 +183,9 @@ a {
     .footer-container .vertical-row {
         height:200px;
     }
+    .footer-nav, .footer-service, .footer-center {
+        padding:0.7rem;
+    }
 }
 @media (max-width:768px) {
     :root {
