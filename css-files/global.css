@@ -28,10 +28,10 @@ h2 {
 h3, p, a {
     font-size:var(--small-text);
 }
-h1, h2 {
+h1, h2, h3 {
     font-family:var(--title-font);
 }
-p, a, h3 {
+p, a {
     font-family:var(--text-font);
 }
 h1, h2, h3, p, a {

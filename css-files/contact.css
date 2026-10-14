@@ -32,6 +32,7 @@
     display:flex;
     justify-content:space-between;
     padding:2.5rem;
+    border-bottom:2px solid var(--divider);
 }
 .main-container .div-line {
     height:inherit;
@@ -91,4 +92,44 @@
 .form-container input[type="submit"]:hover {
     background-color:var(--champagne);
     color:var(--charcoal);
+}
+/* SERVICE-CHANNELS SECTION */
+.service-container, .service-container .channels {
+    display:flex;
+    flex-direction:column;
+    gap:1rem;
+}
+.service-container .container {
+    display:flex;
+    gap:2rem;
+}
+.service-container .container .icon {
+    font-size:1.5rem;
+    color:var(--champagne);
+}
+.service-container .container .content p:first-child {
+    text-transform:uppercase;
+    font-size:0.7rem;
+}
+/* OTHER CHANNELS SECTION */
+.other-container {
+    display:flex;
+    justify-content:space-between;
+    padding:2.5rem;
+}
+.other-container .div-line {
+    height:inherit;
+    width:1px;
+    background:var(--divider);
+}
+.other-container .other-button a {
+    display:flex;
+    align-items:center;
+    padding:1rem;
+}
+.other-button1 h3 {
+    font-size:1.2rem;
+}
+.other-button2 p {
+    font-size:1.5rem;
 }
