@@ -18,6 +18,9 @@
     font-family:var(--text-font);
 }
 /* MAIN CONTENT */
+.legal-sections h3 {
+    font-size:1.5rem;
+}
 .main-content {
     display:flex;
     justify-content:space-between;
@@ -79,6 +82,9 @@
     }
 }
 @media (max-width:768px) {
+    .legal-sections h3 {
+        font-size:1rem;
+    }
     .hero-container {
         flex-direction:column;
         gap:1rem;
@@ -147,9 +153,6 @@
     }
     .legal-sections {
         width:100%;
-    }
-    .legal-sections h3 {
-        font-size:0.8rem;
     }
 }
 @media (max-width:500px) {
