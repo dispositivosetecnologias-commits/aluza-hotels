@@ -3,7 +3,7 @@
     color:var(--champagne);
     border-bottom:1.5px solid var(--champagne);
 }
-/* SECTION 1 */ 
+/* ABOUT SECTION  */ 
 .about-container {
     display:flex;
     flex-direction:column;
@@ -35,7 +35,7 @@
     height:100%;
     object-fit:cover;
 }
-/* SECTION 2 */
+/* ORIGIN SECTION */
 .origin-container {
     display:flex;
     flex-direction:column;
@@ -86,7 +86,7 @@
     width:20px;
     background-color:var(--champagne);
 }
-/* SECTION 3 */
+/* VALUES SECTION */
 .values-container {
     display:flex;
     flex-direction:column;
@@ -121,7 +121,7 @@
     display:block;
     background-color:var(--divider);
 }
-/* SECTION 4 */ 
+/* CTA SECTION */ 
 .cta-container {
     display:flex;
     flex-direction:column;

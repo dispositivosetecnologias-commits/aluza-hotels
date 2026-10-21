@@ -238,3 +238,31 @@
     font-size:1.5rem;
     color:var(--champagne);
 }
+/* BANNER SECTION */
+.banner-container {
+    display:flex;
+    justify-content:space-between;
+    background:
+    linear-gradient(to right, rgba(0, 0, 0, 0.8), transparent 30%),
+    linear-gradient(to left, rgba(0, 0, 0, 0.8), transparent 30%),
+    url(../images-files/paris-images/img14.png) center/cover;
+    padding:2.5rem;
+    align-items:center;
+    margin-top:1rem;
+}
+.banner-container .text {
+    display:flex;
+    flex-direction:column;
+    gap:1rem;
+}
+.banner-container h2, .banner-container p, .banner-container a {
+    color:var(--cream);
+    text-shadow:1px 1px 2px #000000;
+}
+.banner-container .request-button a {
+    border-color:var(--cream);
+}
+.banner-container .request-button a:hover {
+    color:var(--champagne);
+    border-color:var(--champagne);
+}
