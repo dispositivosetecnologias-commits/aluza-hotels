@@ -132,10 +132,13 @@
         background:
         linear-gradient(to left, var(--cream), transparent 50%),
         url(../images-files/faq-images/img2.png) center/cover;
-        text-align:center;
+        gap:1rem;
     }
     .cta-container .text, .cta-container .request-button {
         width:100%;
+    }
+    .cta-container .request-button {
+        padding:0;
     }
     .cta-container .request-button a {
         color:var(--charcoal);
@@ -148,7 +151,7 @@
     }
 }
 @media (max-width:500px) {
-    .banner-container {
+    .banner-container, .cta-container {
         text-align:center;
     }
     .banner-container h1::after {
