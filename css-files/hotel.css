@@ -13,7 +13,7 @@
     text-shadow:1px 1px 2px #000000;
 }
 .hero-text h1, .hero-text p, .hero-container .request-button a{
-    color:var(--cream);
+    color:var(--white);
 }
 .hero-text p:nth-child(3) {
     font-weight:bold;
@@ -22,7 +22,7 @@
     padding:0;
 }
 .hero-container .request-button a {
-    border-color:var(--cream);
+    border-color:var(--white);
 }
 .hero-container .request-button a:hover {
     border-color:var(--champagne);
@@ -42,7 +42,7 @@
     box-shadow:0px 0px 5px #989898;
     padding:0.7rem;
     margin:auto;
-    background:var(--cream);
+    background:var(--white);
 }
 .hotel-menu-container ul  li a:hover {
     color:var(--champagne);
@@ -252,11 +252,11 @@
     gap:1rem;
 }
 .banner-container h2, .banner-container p, .banner-container a {
-    color:var(--cream);
+    color:var(--white);
     text-shadow:1px 1px 2px #000000;
 }
 .banner-container .request-button a {
-    border-color:var(--cream);
+    border-color:var(--white);
     white-space:nowrap;
 }
 .banner-container .request-button a:hover {

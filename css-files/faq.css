@@ -14,7 +14,7 @@
     text-shadow:1px 1px 2px #000000;
 }
 .banner-text h1, .banner-text p {
-    color:var(--cream);
+    color:var(--white);
 }
 /* QUESTIONS SECTIONS */
 .container-template {
@@ -89,8 +89,8 @@
     color:var(--charcoal);
 }
 .cta-container .request-button a {
-    color:var(--cream);
-    border-color:var(--cream);
+    color:var(--white);
+    border-color:var(--white);
     text-shadow:1px 1px 2px #000000;
 }
 .cta-container .request-button a:hover {
@@ -130,7 +130,7 @@
     .cta-container {
         flex-direction:column;
         background:
-        linear-gradient(to left, var(--cream), transparent 50%),
+        linear-gradient(to left, var(--white), transparent 50%),
         url(../images-files/faq-images/img2.png) center/cover;
         gap:1rem;
     }
@@ -146,8 +146,8 @@
         text-shadow:none;
     }
     .cta-container .request-button a:hover {
-        color:var(--cream);
-        border-color:var(--cream);
+        color:var(--white);
+        border-color:var(--white);
     }
 }
 @media (max-width:500px) {

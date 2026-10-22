@@ -111,7 +111,7 @@
     .legal-nav-mobile details {
         font-size:var(--small-text);
         font-family:var(--text-font);
-        background:var(--cream);
+        background:var(--white);
     }
     .legal-nav-mobile details summary {
         border-bottom:1px solid var(--divider);

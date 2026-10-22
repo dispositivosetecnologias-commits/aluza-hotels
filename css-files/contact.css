@@ -55,7 +55,7 @@
 .form-container input, .form-container select, .form-container textarea {
     padding:0.5rem;
     margin-bottom:1rem;
-    background:var(--cream);
+    background:var(--white);
     border:1px solid var(--champagne);
 }
 .form-container input, .form-container select, .form-container option, .form-container textarea {
@@ -87,7 +87,7 @@
     width:40%;
     align-self:center;
     background-color:var(--charcoal);
-    color:var(--cream);
+    color:var(--white);
     border-radius:5px;
 }
 .form-container input[type="submit"]:hover {
