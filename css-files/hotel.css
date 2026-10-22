@@ -4,9 +4,6 @@
     flex-direction:column;
     gap:1rem;
     padding:2.5rem;
-    background:
-    linear-gradient(to right, rgba(0, 0, 0, 0.5), transparent 50%),
-    url(../images-files/paris-images/img1.png) center/cover;
 }
 .hero-text {
     display:flex;
@@ -245,10 +242,6 @@
 .banner-container {
     display:flex;
     justify-content:space-between;
-    background:
-    linear-gradient(to right, rgba(0, 0, 0, 0.8), transparent 30%),
-    linear-gradient(to left, rgba(0, 0, 0, 0.8), transparent 30%),
-    url(../images-files/paris-images/img14.png) center/cover;
     padding:2.5rem;
     align-items:center;
     margin-top:1rem;
@@ -264,6 +257,7 @@
 }
 .banner-container .request-button a {
     border-color:var(--cream);
+    white-space:nowrap;
 }
 .banner-container .request-button a:hover {
     color:var(--champagne);
@@ -277,12 +271,6 @@
     }
 }
 @media (max-width:768px) {
-    .hero-container {
-        background:
-        linear-gradient(to right, rgba(0, 0, 0, 0.8), transparent 30%),
-        linear-gradient(to left, rgba(0, 0, 0, 0.8), transparent 30%),
-        url(../images-files/paris-images/img1.png) center/cover;
-    }
     .hero-text {
         width:100%;
     }
@@ -355,11 +343,6 @@
     .hero-container, .geral-container, .accommodation-container, .amenities-container, .gallery-container, .location-container, .banner-container {
         padding:1rem;
     }
-    .hero-container {
-        background:
-        linear-gradient(to right, rgba(0, 0, 0, 0.5)),
-        url(../images-files/paris-images/img1.png) center/cover;
-    }
     .hero-container, .banner-container {
         text-align:center;
     }
@@ -373,11 +356,6 @@
     }
     .sections-group {
         padding-top:0;
-    }
-    .banner-container {
-        background:
-        linear-gradient(to right, rgba(0, 0, 0, 0.5)),
-        url(../images-files/paris-images/img14.png) center/cover;
     }
     .banner-container .request-button {
         align-self:center;
