@@ -1,0 +1,31 @@
+.hero-container {
+    background:
+    linear-gradient(to right, rgba(0, 0, 0, 0.5), transparent 50%),
+    url(../images-files/sydney-images/img1.png) center/cover;
+}
+.banner-container {
+    background:
+    linear-gradient(to right, rgba(0, 0, 0, 0.8), transparent 30%),
+    linear-gradient(to left, rgba(0, 0, 0, 0.8), transparent 30%),
+    url(../images-files/sydney-images/img14.png) center/cover;
+}
+@media (max-width:768px) {
+    .hero-container {
+        background:
+        linear-gradient(to right, rgba(0, 0, 0, 0.8), transparent 30%),
+        linear-gradient(to left, rgba(0, 0, 0, 0.8), transparent 30%),
+        url(../images-files/sydney-images/img1.png) center/cover;
+    }
+}
+@media (max-width:500px) {
+    .hero-container {
+        background:
+        linear-gradient(to right, rgba(0, 0, 0, 0.5)),
+        url(../images-files/sydney-images/img1.png) center/cover;
+    }
+    .banner-container {
+        background:
+        linear-gradient(to right, rgba(0, 0, 0, 0.5)),
+        url(../images-files/sydney-images/img14.png) center/cover;
+    }
+}
