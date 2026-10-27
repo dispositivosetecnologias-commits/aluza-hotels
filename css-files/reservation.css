@@ -1,1 +1,81 @@
+/* HERO SECTION */
+.hero-container {
+    padding:2.5rem;
+    background:url(../images-files/reservation-images/img1.png) center/cover;
+}
+.hero-container .hero-text {
+    display:flex;
+    flex-direction:column;
+    gap:1rem;
+    color:var(--charcoal);
+    width:50%;
+}
+/* SECTIONS FLEX */
+.sections-flex {
+    display:flex;
+}
+.sections-flex2 {
+    display:flex;
+    flex-direction:column;
+    justify-content:space-between;
+}
+.sections-flex .div-line {
+    width:2px;
+    background:var(--divider);
+}
+/* FORM SECTION */
+.form-container {
+    padding:2.5rem;
+    gap:1rem;
+}
+.form-container form {
+    display:flex;
+    flex-direction:column;
+    gap:1rem;
+}
+.form-container .container p, .form-container .container label, .form-container .container input {
+    color:var(--charcoal);
+}
+.form-container .container select:invalid {
+    color:rgba(117, 117, 117, 1);
+    background:#FFFFFF;
+}
+.form-container form select, .form-container form input, .form-container form textarea {
+    border:none;
+    outline:none;
+}
+.form-container  form .container .section-label {
+    color:var(--champagne);
+}
+.form-container form .icon-container {
+    border:1px solid var(--champagne);
+    padding:0.4rem;
+    display:flex;
+    gap:1rem;
+    align-items:center;
+}
+.form-container .period-container {
+    display:flex;
+    justify-content:space-between;
+}
+.guest-details-grid {
+    display:grid;
+    grid-template-columns:repeat(2, 1fr);
+    column-gap:1rem;
+}
+.observations-container .icon-container textarea {
+    width:90%;
+    resize:none;
+}
+.form-container form input[type=submit] {
+    width:100%;
+    padding:0.5rem;
+    background:var(--charcoal);
+    color:var(--white);
+}
+.form-container form input[type=submit]:hover {
+    background:var(--champagne);
+    color:var(--charcoal);
+}
+
 

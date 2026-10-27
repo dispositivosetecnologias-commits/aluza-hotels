@@ -47,13 +47,13 @@
             <section class="reservation-form">
                 <div class="form-container">
                     <form method="post" action="">
-                        <div class="destiny">
+                        <div class="destiny container">
                             <p class="section-label">Hotel e acomodação</p>
                             <label for="room">Escolha o hotel e acomodação</label>
                             <div class="icon-container">
                                 <i class="fa-solid fa-location-dot icon form-icon"></i>
                                 <select name="room" id="room" required>
-                                    <option value="" selected disabled>Selecione sua acomodação</option>
+                                    <option value="" selected disabled invalid>Selecione sua acomodação</option>
                                     <optgroup label="Paris">
                                         <option value="paris-deluxe-room">Quarto Deluxe</option>
                                         <option value="paris-eiffel-suite">Suíte Eiffel</option>
@@ -93,7 +93,7 @@
                                 </select>
                             </div>
                         </div>
-                        <div class="period">
+                        <div class="period container">
                             <p class="section-label">Período da estadia</p>
                             <div class="period-container">
                                 <div class="check-container">
@@ -112,7 +112,7 @@
                                 </div>
                             </div>
                         </div>
-                        <div class="guest-details">
+                        <div class="guest-details container">
                             <p class="section-label">Dados do hóspede</p>
                             <div class="guest-details-grid">
                                 <div class="guest-container">
@@ -138,7 +138,7 @@
                                 </div>
                             </div>
                         </div>
-                        <div class="observations-container">
+                        <div class="observations-container container">
                             <p class="section-label">Observações (opcional)</p>
                             <div class="icon-container">
                                 <i class="fa-solid fa-pencil form-icon"></i>
@@ -151,6 +151,7 @@
                     </form>
                 </div>
             </section>
+            <div class="div-line"></div>
             <div class="sections-flex2">
                 <section class="benefits-topics">
                     <div class="benefits-container">
