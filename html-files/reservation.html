@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-br">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -38,145 +38,179 @@
             <div class="hero-container">
                 <div class="hero-text">
                     <h1>Reservas</h1>
-                    <p>Planeje sua próxima estadia com a ALUZA. Preencha os dados abaixoe garanta uma experiência inesquecícel
+                    <p>Planeje sua próxima estadia com a ALUZA. Preencha os dados abaixo e garanta uma experiência inesquecível
                     em um de nossos hotéis ao redor do mundo.</p>
                 </div>
             </div>
         </section>
-        <section class="reservation-form">
-            <div class="form-container">
-                <form method="post" action="">
-                    <div class="destiny">
-                        <p class="section-label">Hotel e acomodação</p>
-                        <label for="room">Escolha o hotel e acomodação</label>
-                        <div class="icon-container">
-                            <select required id="room">
-                                <optgroup label="Paris">
-                                    <option value="paris-deluxe-room">Quarto Deluxe</option>
-                                    <option value="paris-eiffel-suite">Suíte Eiffel</option>
-                                    <option value="paris-prestige-suite">Suíte Prestige</option>
-                                    <option value="paris-royal-suite">Suíte Royal</option>
-                                </optgroup>
-                                <optgroup label="Nova Iorque">
-                                    <option value="new-york-deluxe-room">Quarto Deluxe</option>
-                                    <option value="new-york-manhattan-suite">Suíte Manhattan</option>
-                                    <option value="new-york-skyline-suite">Suíte Skyline</option>
-                                    <option value="new-york-empire-suite">Suíte Empire</option>
-                                </optgroup>
-                                <optgroup label="Rio de Janeiro">
-                                    <option value="rio-de-janeiro-deluxe-room">Quarto Deluxe</option>
-                                    <option value="rio-de-janeiro-copacabana-suite">Suíte Copacabana</option>
-                                    <option value="rio-de-janeiro-sugarloaf-suite">Suíte Pão de Açúcar</option>
-                                    <option value="rio-de-janeiro-skyline-suite">Suíte Rio Skyline</option>
-                                </optgroup>
-                                <optgroup label="Cairo">
-                                    <option value="cairo-deluxe-room">Quarto Deluxe</option>
-                                    <option value="cairo-nile-suite">Suíte Nilo</option>
-                                    <option value="cairo-pyramids-suite">Suíte Pirâmides</option>
-                                    <option value="cairo-royal-suite">Suíte Real</option>
-                                </optgroup>
-                                <optgroup label="Tóquio">
-                                    <option value="tokyo-deluxe-room">Quarto Deluxe</option>
-                                    <option value="tokyo-sakura-suite">Suíte Sakura</option>
-                                    <option value="tokyo-skyline-suite">Suíte Skyline</option>
-                                    <option value="tokyo-imperial-suite">Suíte Imperial</option>
-                                </optgroup>
-                                <optgroup label="Sydney">
-                                    <option value="sydney-deluxe-room">Quarto Deluxe</option>
-                                    <option value="sydney-harbour-suite">Suíte Harbour</option>
-                                    <option value="sydney-skyline-suite">Suíte Skyline</option>
-                                    <option value="sydney-opera-suite">Suíte Opera</option>
-                                </optgroup>
-                            </select>
+        <div class="sections-flex">
+            <section class="reservation-form">
+                <div class="form-container">
+                    <form method="post" action="">
+                        <div class="destiny">
+                            <p class="section-label">Hotel e acomodação</p>
+                            <label for="room">Escolha o hotel e acomodação</label>
+                            <div class="icon-container">
+                                <i class="fa-solid fa-location-dot icon form-icon"></i>
+                                <select name="room" id="room" required>
+                                    <option value="" selected disabled>Selecione sua acomodação</option>
+                                    <optgroup label="Paris">
+                                        <option value="paris-deluxe-room">Quarto Deluxe</option>
+                                        <option value="paris-eiffel-suite">Suíte Eiffel</option>
+                                        <option value="paris-prestige-suite">Suíte Prestige</option>
+                                        <option value="paris-royal-suite">Suíte Royal</option>
+                                    </optgroup>
+                                    <optgroup label="Nova Iorque">
+                                        <option value="new-york-deluxe-room">Quarto Deluxe</option>
+                                        <option value="new-york-manhattan-suite">Suíte Manhattan</option>
+                                        <option value="new-york-skyline-suite">Suíte Skyline</option>
+                                        <option value="new-york-empire-suite">Suíte Empire</option>
+                                    </optgroup>
+                                    <optgroup label="Rio de Janeiro">
+                                        <option value="rio-de-janeiro-deluxe-room">Quarto Deluxe</option>
+                                        <option value="rio-de-janeiro-copacabana-suite">Suíte Copacabana</option>
+                                        <option value="rio-de-janeiro-sugarloaf-suite">Suíte Pão de Açúcar</option>
+                                        <option value="rio-de-janeiro-skyline-suite">Suíte Rio Skyline</option>
+                                    </optgroup>
+                                    <optgroup label="Cairo">
+                                        <option value="cairo-deluxe-room">Quarto Deluxe</option>
+                                        <option value="cairo-nile-suite">Suíte Nilo</option>
+                                        <option value="cairo-pyramids-suite">Suíte Pirâmides</option>
+                                        <option value="cairo-royal-suite">Suíte Real</option>
+                                    </optgroup>
+                                    <optgroup label="Tóquio">
+                                        <option value="tokyo-deluxe-room">Quarto Deluxe</option>
+                                        <option value="tokyo-sakura-suite">Suíte Sakura</option>
+                                        <option value="tokyo-skyline-suite">Suíte Skyline</option>
+                                        <option value="tokyo-imperial-suite">Suíte Imperial</option>
+                                    </optgroup>
+                                    <optgroup label="Sydney">
+                                        <option value="sydney-deluxe-room">Quarto Deluxe</option>
+                                        <option value="sydney-harbour-suite">Suíte Harbour</option>
+                                        <option value="sydney-skyline-suite">Suíte Skyline</option>
+                                        <option value="sydney-opera-suite">Suíte Opera</option>
+                                    </optgroup>
+                                </select>
+                            </div>
+                        </div>
+                        <div class="period">
+                            <p class="section-label">Período da estadia</p>
+                            <div class="period-container">
+                                <div class="check-container">
+                                    <label for="check-in">Check-in</label>
+                                    <div class="icon-container">
+                                        <i class="fa-solid fa-calendar icon-form"></i>
+                                        <input type="date" name="check-in" id="check-in" required>
+                                    </div>
+                                </div>
+                                <div class="check-container">
+                                    <label for="check-out">Check-out</label>
+                                    <div class="icon-container">
+                                        <i class="fa-solid fa-calendar icon-form"></i>
+                                        <input type="date" name="check-out" id="check-out" required>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="guest-details">
+                            <p class="section-label">Dados do hóspede</p>
+                            <div class="guest-details-grid">
+                                <div class="guest-container">
+                                    <label for="name">Nome completo</label>
+                                    <div class="icon-container">
+                                        <i class="fa-solid fa-user form-icon"></i>
+                                        <input type="text" name="name" id="name" required placeholder="Seu nome completo">
+                                    </div>
+                                </div>
+                                <div class="guest-container">
+                                    <label for="email">E-mail</label>
+                                    <div class="icon-container">
+                                        <i class="fa-solid fa-envelope icon form-icon"></i>
+                                        <input type="email" name="e-mail" id="email" required placeholder="seuemail@exemplo.com">
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="guest-container">
+                                <label for="cellphone-number">Telefone</label>
+                                <div class="icon-container">
+                                    <i class="fa-solid fa-phone icon form-icon"></i>
+                                    <input type="tel" name="cellphone-number" id="cellphone-number" required placeholder="(00) 00000-0000">
+                                </div>
+                            </div>
+                        </div>
+                        <div class="observations-container">
+                            <p class="section-label">Observações (opcional)</p>
+                            <div class="icon-container">
+                                <i class="fa-solid fa-pencil form-icon"></i>
+                                <textarea name="observations" id="obs" placeholder="Alguma solicitação especial? (ex.: cama extra, data comemorativa...)"></textarea>
+                            </div>
+                        </div>
+                        <div class="submit-container">
+                            <input type="submit" value="Confirmar reserva →">
+                        </div>
+                    </form>
+                </div>
+            </section>
+            <div class="sections-flex2">
+                <section class="benefits-topics">
+                    <div class="benefits-container">
+                        <div class="benefits-topic">
+                            <div class="icon">
+                                <i class="fa-solid fa-bell"></i>
+                            </div>
+                            <div class="text">
+                                <p class="section-label">Experiência exclusiva</p>
+                                <p>Cada detalhe da sua estadia é pensado para oferecer conforto, sofisticação e momentos inesquecíveis.</p>
+                            </div>
+                        </div>
+                        <div class="benefits-topic">
+                            <div class="icon">
+                                <i class="fa-solid fa-gem"></i>
+                            </div>
+                            <div class="text">
+                                <p class="section-label">Atendimento personalizado</p>
+                                <p>Nossa equipe está à disposição para auxiliar em todas as etapas da sua reserva.</p>
+                            </div>
+                        </div>
+                        <div class="benefits-topic">
+                            <div class="icon">
+                                <i class="fa-solid fa-circle-check"></i>
+                            </div>
+                            <div class="text">
+                                <p class="section-label">Reserva segura</p>
+                                <p>Seus dados são protegidos com total segurança e privacidade.</p>
+                            </div>
                         </div>
                     </div>
-                    <div class="period">
-                        <p class="section-label">Período da estadia</p>
-                        <label for="check-in">Check-in</label>
-                        <div class="icon-container">
-                            <input type="date" name="check-in" id="check-in" required>
+                </section>
+                <section class="contact">
+                    <div class="contact-container">
+                        <div class="contact-text">
+                            <p class="section-label">Precisa de ajuda?</p>
+                            <p>Nossa equipe está pronta para te ajudar com sua reserva, solicitações especiais ou qualquer outra dúvida.</p>
                         </div>
-                        <label for="check-out">Check-out</label>
-                        <div class="icon-container">
-                            <input type="date" name="check-out" id="check-out" required>
+                        <div class="contact-topic">
+                            <div class="icon">
+                                <i class="fa-solid fa-phone icon"></i>
+                            </div>
+                            <div class="text">
+                                <a href="tel:+551140022026">+55 (11) 4002-2026</a>
+                                <p>Seg. a sex. das 8h às 20h</p>
+                                <p>Sáb., dom. e feriados das 9h às 18h</p>
+                            </div>
+                        </div>
+                        <div class="contact-topic">
+                            <div class="icon">
+                                <i class="fa-solid fa-envelope icon"></i>
+                            </div>
+                            <div class="text">
+                                <a href="mailto:contato@aluza.com">contato@aluza.com</a>
+                            </div>
                         </div>
                     </div>
-                    <p class="section-label">Dados do hóspede</p>
-                    <div class="guest-details-grid">
-                        <label for="name">Nome completo</label>
-                        <div class="icon-container">
-                            <input type="text" name="name" id="name" required placeholder="Seu nome completo">
-                        </div>
-                        <label for="email">E-mail</label>
-                        <div class="icon-container">
-                            <input type="email" name="e-mail" id="email" required placeholder="seuemail@exemplo.com">
-                        </div>
-                    </div>
-                    <label for="cellphone-number">Telefone</label>
-                    <div class="icon-container">
-                        <input type="tel" name="cellphone-number" id="cellphone-number" required placeholder="(00) 00000-0000">
-                    </div>
-                    <input type="submit" value="Confirmar reserva →">
-                </form>
+                </section>
             </div>
-        </section>
-        <section class="benefits-topics">
-            <div class="benefits-container">
-                <div class="benefits-topic">
-                    <div class="icon">
-
-                    </div>
-                    <div class="text">
-                        <p class="section-label">Experiência exclusiva</p>
-                        <p>Cada detalhe da sua estadia é pensado para oferecer conforto, sofisticação e momentos inesquecíveis.</p>
-                    </div>
-                </div>
-                <div class="benefits-topic">
-                    <div class="icon">
-
-                    </div>
-                    <div class="text">
-                        <p class="section-label">Atendimento personalizado</p>
-                        <p>Nossa equipe está à disposição para auxiliar em todas as etapas da sua reserva.</p>
-                    </div>
-                </div>
-                <div class="benefits-topic">
-                    <div class="icon">
-
-                    </div>
-                    <div class="text">
-                        <p class="section-label">Reserva segura</p>
-                        <p>Seus dados são protegidos com total segurança e privacidade.</p>
-                    </div>
-                </div>
-            </div>
-        </section>
-        <section class="contact">
-            <div class="contact-container">
-                <div class="contact-text">
-                    <p class="section-label">Precisa de ajuda?</p>
-                    <p>Nossa equipe está pronta para te ajudar com sua reserva, solicitações especiais ou qualquer outra dúvida.</p>
-                </div>
-                <div class="contact-topic">
-                    <div class="icon">
-
-                    </div>
-                    <div class="text">
-                        <a href="tel:+551140022026">+55 (11) 4002-2026</a>
-                        <p>Seg. a sex. das 8h às 20h</p>
-                        <p>Sáb., dom. e feriados das 9h às 18h</p>
-                    </div>
-                </div>
-                <div class="contact-topic">
-                    <div class="icon">
-
-                    </div>
-                    <div class="text">
-                        <a href="mailto:contato@aluza.com">contato@aluza.com</a>
-                    </div>
-                </div>
-            </div>
-        </section>
+        </div>
     </main>
     <footer>
         <div class="footer-container">
