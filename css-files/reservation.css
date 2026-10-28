@@ -33,10 +33,17 @@
     flex-direction:column;
     gap:1rem;
 }
+label, textarea, input, select, option {
+    font-size:var(--small-text);
+    font-family:var(--text-font);
+}
 .form-container .container p, .form-container .container label, .form-container .container input {
     color:var(--charcoal);
 }
-.form-container .container select:invalid {
+.form-container .container select {
+    width:100%;
+}
+.form-container .container select:invalid, .form-container .container input[type=date] {
     color:rgba(117, 117, 117, 1);
     background:#FFFFFF;
 }
@@ -54,9 +61,16 @@
     gap:1rem;
     align-items:center;
 }
+.form-container form .icon-container .form-icon {
+    color:var(--champagne);
+}
 .form-container .period-container {
-    display:flex;
-    justify-content:space-between;
+    display:grid;
+    grid-template-columns:repeat(2, 1fr);
+    column-gap:1rem;
+}
+.period-container input {
+    width:100%;
 }
 .guest-details-grid {
     display:grid;
@@ -64,7 +78,7 @@
     column-gap:1rem;
 }
 .observations-container .icon-container textarea {
-    width:90%;
+    width:100%;
     resize:none;
 }
 .form-container form input[type=submit] {
@@ -77,5 +91,26 @@
     background:var(--champagne);
     color:var(--charcoal);
 }
-
+/* BENEFITS SECTION */
+.benefits-container {
+    padding:2.5rem;
+    display:flex;
+    flex-direction:column;
+    gap:1rem;
+    background:var(--cream);
+}
+.benefits-topic .text {
+    display:flex;
+    flex-direction:column;
+    gap:0.5rem;
+}
+.benefits-topic {
+    display:flex;
+    align-items:center;
+    gap:1rem;
+}
+.benefits-topic .icon {
+    font-size:3rem;
+    color:var(--champagne);
+}
 
