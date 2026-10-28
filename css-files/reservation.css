@@ -14,9 +14,13 @@
 .sections-flex {
     display:flex;
 }
+.reservation-form {
+    flex:3;
+}
 .sections-flex2 {
     display:flex;
     flex-direction:column;
+    flex:2;
     justify-content:space-between;
 }
 .sections-flex .div-line {
@@ -31,7 +35,7 @@
 .form-container form {
     display:flex;
     flex-direction:column;
-    gap:1rem;
+    gap:1.5rem;
 }
 label, textarea, input, select, option {
     font-size:var(--small-text);
@@ -97,7 +101,7 @@ label, textarea, input, select, option {
     display:flex;
     flex-direction:column;
     gap:1rem;
-    background:var(--cream);
+    border-bottom:2px solid var(--divider);
 }
 .benefits-topic .text {
     display:flex;
@@ -110,7 +114,39 @@ label, textarea, input, select, option {
     gap:1rem;
 }
 .benefits-topic .icon {
-    font-size:3rem;
+    font-size:2.5rem;
+    color:var(--champagne);
+    background:var(--cream);
+    border:1px solid var(--divider);
+    border-radius:50%;
+    padding:0.5rem;
+}
+/* CONTACT SECTION */
+.contact {
+    padding:2.5rem;
+}
+.contact-container {
+    padding:2.5rem;
+    display:flex;
+    flex-direction:column;
+    gap:1rem;
+    background:var(--cream);
+    border-radius:5px;
+    border:1px solid var(--divider);
+    box-shadow:0px 0px 4px #c0c0c0;
+}
+.contact-text {
+    display:flex;
+    flex-direction:column;
+    gap:1rem;
+}
+.contact-topic {
+    display:flex;
+    gap:1rem;
+    align-items:center;
+}
+.contact-topic .icon {
+    font-size:1.5rem;
     color:var(--champagne);
 }
 
