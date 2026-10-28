@@ -1,14 +1,19 @@
 /* HERO SECTION */
 .hero-container {
     padding:2.5rem;
-    background:url(../images-files/reservation-images/img1.png) center/cover;
+    background:
+    linear-gradient(to right, rgba(0, 0, 0, 0.1)),
+    url(../images-files/reservation-images/img1.png) center/cover;
 }
 .hero-container .hero-text {
     display:flex;
     flex-direction:column;
     gap:1rem;
-    color:var(--charcoal);
     width:50%;
+}
+.hero-text h1, .hero-text p {
+    color:var(--white);
+    text-shadow:1px 1px 2px #000000;
 }
 /* SECTIONS FLEX */
 .sections-flex {
@@ -30,11 +35,11 @@
 /* FORM SECTION */
 .form-container {
     padding:2.5rem;
-    gap:1rem;
 }
 .form-container form {
     display:flex;
     flex-direction:column;
+    justify-content:center;
     gap:1.5rem;
 }
 label, textarea, input, select, option {
@@ -65,21 +70,19 @@ label, textarea, input, select, option {
     gap:1rem;
     align-items:center;
 }
+.form-container form .icon-container:focus-within {
+    outline:1px solid var(--champagne)
+}
 .form-container form .icon-container .form-icon {
     color:var(--champagne);
 }
-.form-container .period-container {
+.form-container .period-container, .guest-details-grid {
     display:grid;
     grid-template-columns:repeat(2, 1fr);
     column-gap:1rem;
 }
 .period-container input {
     width:100%;
-}
-.guest-details-grid {
-    display:grid;
-    grid-template-columns:repeat(2, 1fr);
-    column-gap:1rem;
 }
 .observations-container .icon-container textarea {
     width:100%;
@@ -149,4 +152,67 @@ label, textarea, input, select, option {
     font-size:1.5rem;
     color:var(--champagne);
 }
-
+.contact-container a:hover {
+    color:var(--champagne);
+}
+/* MEDIA QUERY */
+@media (max-width:1200px) {
+    .sections-flex {
+        flex-direction:column;
+    }
+    .form-container {
+        border-bottom:2px solid var(--divider);
+    }
+    .benefits-container {
+        display:grid;
+        grid-template-columns:repeat(3, 1fr);
+        column-gap:1rem;
+    }
+    .contact-container {
+        flex-direction:row;
+        justify-content:space-between;
+    }
+    .contact-container .div-line {
+        width:1px;
+    }
+    .contact-text {
+        flex:1;
+    }
+    .contact-topics {
+        display:flex;
+        justify-content:space-between;
+        flex:1.5;
+    }
+}
+@media (max-width:1100px) {
+    .contact-container {
+        flex-direction:column;
+    }
+}
+@media (max-width:720px) {
+    .benefits-container {
+        display:flex;
+    }
+}
+@media (max-width:660px) {
+    .contact-topics {
+        flex-direction:column;
+    }
+}
+@media (max-width:635px) {
+    .form-container .period-container, .guest-details-grid {
+        grid-template-columns:1fr;
+    }
+}
+@media (max-width:500px) {
+    .hero-container .hero-text {
+        text-align:center;
+        width:100%;
+    }
+}
+@media (max-width:415px) {
+    .benefits-topic {
+        flex-direction:column;
+        text-align:center;
+    }
+}
